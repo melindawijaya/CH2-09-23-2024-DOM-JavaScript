@@ -1,7 +1,3 @@
-Berikut adalah contoh file `README.md` yang mendeskripsikan kode JavaScript yang telah Anda berikan:
-
----
-
 # Drum Kit Interaction
 
 This project is a simple interactive drum kit built with JavaScript, HTML, and CSS. Users can interact with the drum kit either by clicking on the drum buttons or by pressing specific keys on their keyboard. Each button or key corresponds to a different drum sound.
