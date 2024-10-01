@@ -16,47 +16,9 @@ The code adds an event listener to each button on the page. When a button is cli
 1. Changes the button's text color to red for 2 seconds.
 2. Plays the corresponding drum sound based on the button's inner HTML content.
 
-```js
-for (let i = 0; i < totalButton; i++) {
-    document.querySelectorAll("button")[i].addEventListener("click", function () {
-        let button = document.querySelectorAll("button")[i];
-        button.style.color = "red";
-        setTimeout(function () {
-            button.style.color = "";
-        }, 2000);
-
-        switch (button.innerHTML) {
-            case "w":
-                let tom1 = new Audio('sounds/tom-1.mp3');
-                tom1.play();
-                break;
-            case "a":
-                let tom2 = new Audio('sounds/tom-2.mp3');
-                tom2.play();
-                break;
-            // Other cases...
-        }
-    });
-}
-```
-
 ### Keyboard Events
 
 The code also listens for keydown events, and when the user presses one of the designated keys (`w`, `a`, `s`, `d`, `j`, `k`, `l`), the corresponding sound plays.
-
-```js
-document.addEventListener("keydown", event => {
-    if (event.key.startsWith("w")) {
-        let tom1 = new Audio('sounds/tom-1.mp3');
-        tom1.play();
-    }
-    else if (event.key.startsWith("a")) {
-        let tom2 = new Audio('sounds/tom-2.mp3');
-        tom2.play();
-    }
-    // Other keys...
-});
-```
 
 ### Audio Files
 
